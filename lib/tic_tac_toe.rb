@@ -47,6 +47,7 @@ def turn(board)
     good_move = valid_move?(board, index)
     if(good_move)
       move(board, index, current_player(board))
+      display_board(board)
     else
       puts "Enter a number 1-9 thats not taken please"
       index = input_to_index(gets.strip)
